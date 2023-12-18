@@ -4,8 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --open"
+    "dev": "webpack serve --open",
+    "build": "node --max_old_space_size=4092 & webpack --config ./webpack.prod.config.js --progress",
+    "preview": "npx cup run ./dist"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,9 @@
   "devDependencies": {
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.4",
+    "mini-cup": "^1.1.3",
     "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.5.1",
     "typescript": "^5.2.2",
     "webpack": "^5.89.0",
