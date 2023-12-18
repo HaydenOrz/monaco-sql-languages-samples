@@ -7,7 +7,7 @@
       "skipLibCheck": true,
       "composite": true,
       "allowSyntheticDefaultImports": true,
-      "moduleResolution": "Node",
+      "moduleResolution": "Bundler",
       "resolveJsonModule": true,
       "isolatedModules": true,
       "strict": true,
